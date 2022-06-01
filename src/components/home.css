@@ -1,0 +1,221 @@
+.top h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    line-height: 42px;
+}
+
+.top p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.input {
+    width: 50%;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #000;
+    padding: 6px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.input::placeholder {
+    font-size: 12px;
+}
+
+.top-right img {
+    width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .top-right img {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .top-right img {
+        margin-top: 45px;
+    }
+}
+
+.works h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+
+.works p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+
+
+.work-card h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.work-card p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 20px 25px;
+}
+
+.row-box {
+    margin-top: 130px;
+}
+
+.work-card-image {
+    height: 82.11046600341797px;
+    width: 83.31781005859375px;
+    border-radius: 0px;
+    background: #D9D9D9;
+    margin-bottom: 40px;
+}
+.choose img {
+    max-width: 80%;
+}
+
+.row-choose h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+
+.row-choose p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.span-text {
+    font-weight: 700;
+}
+
+.section-service {
+    margin-top: 120px;
+}
+.service h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+
+.service p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.service-card img {
+    width: 100%;
+}
+
+.service-card p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0275em;
+    text-align: left;
+    margin: 0; 
+}
+
+.para {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.input-text {
+    width: 25%;
+    border: 0;
+}
+
+.qty-down, .qty-up {
+    border: 0;
+}
+
+.img-heart {
+    width: 40% !important;
+}
+
+.get-position {
+    position: relative;
+}
+
+.rating {
+    color: #E16A16;
+}
+
+@media screen and (max-width: 650px) {
+    .col-sm-12 {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .col-sm-12 {
+        margin-bottom: 45px;
+    }
+}
+
+.wait-section {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  text-align: center;
+}
+
+.wait-section h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.wait-section p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
