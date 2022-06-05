@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'
-import { Button}  from './Button'
+import { Button }  from './Button'
+import Product from './Product'
 import Pix from '../images/pix.png'
 import Pix2 from '../images/pix2.png'
 import Item from '../images/item.png'
@@ -11,10 +12,71 @@ import Pr2 from '../images/pr2.png'
 import Pr3 from '../images/pr3.png'
 import Heart from '../images/Heart.png'
 import Wait from '../images/waitimg.png'
+import Logo from '../images/logo.png'
+import footLogo from '../images/foot.png'
+import footimg from '../images/footimg.png'
+import google from '../images/Google.png'
+import facebook from '../images/Facebook.png'
+import whatsap from '../images/WhatsApp.png'
 
 const Home = () => {
+
+  // const [num, setNum] = useState(1);
+
+  // const increaseNum = () => {
+  //   if (num < 10) {
+  //     setNum(Number(num) + 1);
+  //   }
+  // };
+
+  // const decreaseNum = () => {
+  //   if (num > 1) {
+  //     setNum(num - 1);
+  //   }
+  // }
+
+
   return (
     <>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <a className="navbar-brand" href=""><img src={Logo} alt="logo"></img></a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+            <a className="nav-link" href="#!">About <span className="sr-only">(current)</span></a>
+            </li>
+            <li className="nav-item">
+            <a className="nav-link" href="#!">Our Service</a>
+            </li>
+            <li className="nav-item">
+            <a className="nav-link" href="#!">Contact</a>
+            </li>
+            <li className="nav-item">
+            <a className="nav-link" href="#!">FAQ</a>
+            </li>
+          </ul>
+          <form className="form-inline my-2 my-lg-0">
+            {/* <Button 
+            type="button" 
+            buttonStyle="myBtn--transparent--solid" 
+            buttonSize="myBtn--medium"
+            >FAQ</Button> */}
+            <a className="nav-link lin" href="#!">FAQ</a>
+            <Button 
+            type="button" 
+            buttonStyle="myBtn--chocolate--solid"
+            buttonSize="myBtn--medium"
+            >
+            Join waitlist</Button>
+          </form>
+          </div>
+        </div>
+      </nav>
     <div className='container mt-5'>
       <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-6">
@@ -116,170 +178,10 @@ const Home = () => {
           </p>
 
           <div className="row">
-            <div className="col-sm-12 col-md-12 col-lg-3">
-              <div className="service-card">
-                <div className='get-position'>
-                  <img src={ Pr3 } alt="pr" />
-                  <Button type="button" buttonStyle="myBtn--transparent--solid" buttonSize="myBtn--xsmall">50% off</Button>
-                  <Button type="button" buttonStyle="myBtn--outline--solid" buttonSize="myBtn--xsmall"><img src={ Heart } alt="heart" className='img-heart'/>save</Button>
-                </div>
-                <p className='m-0 p-0'>Korean Rectangle</p>
-                <p>Eyeglasses Optical Eyewear Frames For Men</p>
-                <small className='para'>₦7,568</small>
-                <div className="row">
-                  <div className='col-lg-6'>
-                    <small>free delivery</small>
-                  </div>
-                  <div className='col-lg-6'>
-                    <form>
-                      <button className='mr-3 qty-down'>-</button>
-                      <input type="text" className='input-text' value="1" disabled/>
-                      <button className='qty-up'>+</button>
-                    </form>
-                  </div>
-                </div>
-                <div class="d-flex mt-3 justify-content-between">
-                  <div class="rating font-size-12">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                  <p>100</p>
-                  <div>
-                    <Button 
-                    type="button" 
-                    buttonStyle="myBtn--chocolate--solid"
-                    buttonSize="myBtn--cart-small"
-                    >Add to Cart</Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-3">
-              <div className="service-card">
-                <div className='get-position'>
-                  <img src={ Pr } alt="pr" />
-                  {/* <Button type="button" buttonStyle="myBtn--transparent--solid" buttonSize="myBtn--xsmall">50% off</Button> */}
-                  <Button type="button" buttonStyle="myBtn--outline--solid" buttonSize="myBtn--xsmall"><img src={ Heart } alt="heart" className='img-heart'/>save</Button>
-                </div>
-                <p className='m-0 p-0'>Korean Rectangle</p>
-                <p>Eyeglasses Optical Eyewear Frames For Men</p>
-                <small className='para'>₦7,568</small>
-                <div className="row">
-                  <div className='col-lg-6'>
-                    <small>free delivery</small>
-                  </div>
-                  <div className='col-lg-6'>
-                    <form>
-                      <button className='mr-3 qty-down'>-</button>
-                      <input type="text" className='input-text' value="1" disabled/>
-                      <button className='qty-up'>+</button>
-                    </form>
-                  </div>
-                </div>
-                <div class="d-flex mt-3 justify-content-between">
-                  <div class="rating font-size-12">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                  <p>100</p>
-                  <div>
-                    <Button 
-                    type="button" 
-                    buttonStyle="myBtn--chocolate--solid"
-                    buttonSize="myBtn--cart-small"
-                    >Add to Cart</Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-3">
-              <div className="service-card">
-                <div className='get-position'>
-                  <img src={ Pr3 } alt="pr" />
-                  <Button type="button" buttonStyle="myBtn--transparent--solid" buttonSize="myBtn--xsmall">50% off</Button>
-                  <Button type="button" buttonStyle="myBtn--outline--solid" buttonSize="myBtn--xsmall"><img src={ Heart } alt="heart" className='img-heart'/>save</Button>
-                </div>
-                <p className='m-0 p-0'>Korean Rectangle</p>
-                <p>Eyeglasses Optical Eyewear Frames For Men</p>
-                <small className='para'>₦7,568</small>
-                <div className="row">
-                  <div className='col-lg-6'>
-                    <small>free delivery</small>
-                  </div>
-                  <div className='col-lg-6'>
-                    <form>
-                      <button className='mr-3 qty-down'>-</button>
-                      <input type="text" className='input-text' value="1" disabled/>
-                      <button className='qty-up'>+</button>
-                    </form>
-                  </div>
-                </div>
-                <div class="d-flex mt-3 justify-content-between">
-                  <div class="rating font-size-12">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                  <p>100</p>
-                  <div>
-                    <Button 
-                    type="button" 
-                    buttonStyle="myBtn--chocolate--solid"
-                    buttonSize="myBtn--cart-small"
-                    >Add to Cart</Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-3">
-              <div className="service-card">
-                <div className='get-position'>
-                  <img src={ Pr2 } alt="pr" />
-                  <Button type="button" buttonStyle="myBtn--transparent--solid" buttonSize="myBtn--xsmall">50% off</Button>
-                  <Button type="button" buttonStyle="myBtn--outline--solid" buttonSize="myBtn--xsmall"><img src={ Heart } alt="heart" className='img-heart'/>save</Button>
-                </div>
-                <p className='m-0 p-0'>Korean Rectangle</p>
-                <p>Eyeglasses Optical Eyewear Frames For Men</p>
-                <small className='para'>₦7,568</small>
-                <div className="row">
-                  <div className='col-lg-6'>
-                    <small>free delivery</small>
-                  </div>
-                  <div className='col-lg-6'>
-                    <form>
-                      <button className='mr-3 qty-down'>-</button>
-                      <input type="text" className='input-text' value="1" disabled/>
-                      <button className='qty-up'>+</button>
-                    </form>
-                  </div>
-                </div>
-                <div class="d-flex mt-3 justify-content-between">
-                  <div class="rating font-size-12">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                  <p>100</p>
-                  <div>
-                    <Button 
-                    type="button" 
-                    buttonStyle="myBtn--chocolate--solid"
-                    buttonSize="myBtn--cart-small"
-                    >Add to Cart</Button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Product img={Pr3} image={Heart} name="Korean Rectangle" description="Eyeglasses Optical Eyewear Frames For Men" price="7,995"/>
+            <Product img={Pr2} image={Heart} name="Korean Rectangle" description="Eyeglasses Optical Eyewear Frames For Men" price="7,995"/>
+            <Product img={Pr} image={Heart} name="Korean Rectangle" description="Eyeglasses Optical Eyewear Frames For Men" price="7,995"/>
+            <Product img={Pr3} image={Heart} name="Korean Rectangle" description="Eyeglasses Optical Eyewear Frames For Men" price="7,995"/>
           </div>
         </div>
       </div>
@@ -297,7 +199,7 @@ const Home = () => {
 
         <div className="wait-section">
           <h3>Join our Waitlist</h3>
-          <p>Get informed once we’re live</p>
+          <p>Get informed once we are live</p>
           <form>
             <input type="text" name="" className="input" id="" placeholder='Enter your email address' size= "60"/>
             <Button 
@@ -309,6 +211,44 @@ const Home = () => {
         </div>
 
     </section>
+    <div style={{
+        backgroundImage: `url(${footLogo})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center left",
+        backgroundSize: "cover",
+        padding: "40px",
+        maxHeight: "100%"
+        }}>
+      <div className="row">
+          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <img src={ footimg } alt="footer logo" />
+          </div>
+          <div className="col-sm-12 col-md-2 col-lg-2 col-xl-2 myLink">
+              <h5>Lorem</h5>
+              <p><a href="">lorem ipsum</a></p>
+              <p><a href="">lorem ipsum</a></p>
+              <p><a href="">lorem ipsum</a></p>
+          </div>
+          <div className="col-sm-12 col-md-2 col-lg-2 col-xl-2 myLink">
+              <h5>Lorem</h5>
+              <p><a href="">lorem ipsum</a></p>
+              <p><a href="">lorem ipsum</a></p>
+              <p><a href="">lorem ipsum</a></p>
+          </div>
+          <div className="col-sm-12 col-md-2 col-lg-2 col-xl-2 myLink">
+            <h5>Lorem</h5>
+              <p><a href="">lorem ipsum</a></p>
+              <p><a href="">lorem ipsum</a></p>
+              <p><a href="">lorem ipsum</a></p>
+          </div>
+      </div>
+      <div class="d-flex bd-highlight mb-3">
+        <div class="mr-auto p-2 bd-highlight copy">Copyright © 2022  |  Powered by Carpadi</div>
+        <div class="p-2 bd-highlight"><img src={ google } alt="google" /></div>
+        <div class="p-2 bd-highlight"><img src={ facebook } alt="facebook" /></div>
+        <div class="p-2 bd-highlight"><img src={ whatsap } alt="whatsap" /></div>
+      </div>
+    </div>
     </>
   )
 }

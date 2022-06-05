@@ -3,6 +3,7 @@
     --chocolate: #E16A16;
     --white: #fdfdfd;
     --percent: #FF0000;
+    --dark: #222;
 
 }
 
@@ -15,7 +16,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    color: var(--chocolate);
+    color: var(--dark);
 }
 
 .myBtn:hover {
